@@ -4,7 +4,7 @@ from fastapi.responses import HTMLResponse
 
 from models import Turn
 
-app = FastAPI()
+app = FastAPI(title="Orientierungsfahrt Server", version="1.0")
 
 app.add_middleware(
     CORSMiddleware,

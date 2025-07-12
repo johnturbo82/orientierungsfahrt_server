@@ -16,7 +16,7 @@ app.add_middleware(
 
 @app.get("/")
 async def get_index() -> HTMLResponse:
-    return HTMLResponse("<h1>Welcome to the Orientierungsfahrt Server</h1><p>Use the API to get information about the tours. See <a href='/docs'>Docs</a> for further information.</p>")
+    return HTMLResponse(content="<h1>Welcome to the Orientierungsfahrt Server</h1><p>Use the API to get information about the tours. See <a href='/docs'>Docs</a> for further information.</p>")
 
 @app.get("/version")
 async def get_version() -> int:

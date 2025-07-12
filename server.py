@@ -24,8 +24,9 @@ async def get_version() -> int:
 
 @app.get("/tours")
 async def get_tours() -> list[Turn]:
-    t1 = Turn(id=1, name="Start", description="Start der Tour", image="start")
-    t2 = Turn(id=2, name="Links abbiegen", description="Nach der Brücke", image="left")
-    t2 = Turn(id=3, name="Rechts abbiegen", image="right")
-    t3 = Turn(id=4, name="Ziel", description="Ende der Tour", image="end")
-    return [t1, t2, t3]
+    list_turns = []
+    list_turns.append(Turn(id=1, name="Start", description="Start der Tour", image="start"))
+    list_turns.append(Turn(id=2, name="Links abbiegen", description="Nach der Brücke", image="left"))
+    list_turns.append(Turn(id=3, name="Rechts abbiegen", image="right"))
+    list_turns.append(Turn(id=4, name="Ziel", description="Ende der Tour", image="end"))
+    return list_turns

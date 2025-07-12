@@ -4,3 +4,4 @@ class Turn(BaseModel):
     id: int
     name: str
     description: str | None = None
+    image: str | None = None

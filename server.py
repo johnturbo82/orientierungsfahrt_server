@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 
 from models import Turn
 
@@ -13,12 +14,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/version", response_model=int)
-async def get_version():
+@app.get("/")
+async def get_index() -> HTMLResponse:
+    return HTMLResponse("<h1>Welcome to the Orientierungsfahrt Server</h1><p>Use the API to get information about the tours. See <a href='/docs'>Docs</a> for further information.</p>")
+
+@app.get("/version")
+async def get_version() -> int:
     return 1
 
-@app.get("/tours", response_model=list[Turn])
-async def get_tours():
+@app.get("/tours")
+async def get_tours() -> list[Turn]:
     t1 = Turn(id=1, name="Start", description="Start der Tour", image="start")
     t2 = Turn(id=2, name="Links abbiegen", description="Nach der Brücke", image="left")
     t2 = Turn(id=2, name="Rechts abbiegen", image="right")

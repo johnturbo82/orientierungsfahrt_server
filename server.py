@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
 from models import Turn
+from images import images
 
 app = FastAPI(title="Orientierungsfahrt Server", version="1.0")
 
@@ -25,7 +26,7 @@ async def get_version() -> int:
 @app.get("/tours")
 async def get_tours() -> list[Turn]:
     list_turns = []
-    list_turns.append(Turn(id=1, name="Start", description="Start der Tour", image="start"))
+    list_turns.append(Turn(id=1, name="Start", description="Start der Tour", image="cross_street", image_source=images["cross_street"]))
     list_turns.append(Turn(id=2, name="Links abbiegen", description="Nach der Brücke", image="left"))
     list_turns.append(Turn(id=3, name="Rechts abbiegen", image="right"))
     list_turns.append(Turn(id=4, name="Ziel", description="Ende der Tour", image="end"))

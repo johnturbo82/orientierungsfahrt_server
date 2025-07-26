@@ -45,6 +45,13 @@
     </marker>
   </defs>
   <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     id="rect4"
+     width="132.91568"
+     height="132.60368"
+     x="-0.31200746"
+     y="-0.31200862" />
+  <rect
      style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
      id="rect1"
      width="4.0561132"
@@ -53,14 +60,31 @@
      y="17.004473" />
   <rect
      style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     id="rect1-5"
+     width="4.0561132"
+     height="103.43086"
+     x="-52.506062"
+     y="17.799471" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
      id="rect1-5-9"
      width="4.0561132"
      height="131.51164"
      x="61.89315"
      y="-131.90166"
      transform="rotate(90)" />
+  <circle
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     id="path3"
+     cx="-19.344536"
+     cy="41.809158"
+     r="7.4882078" />
   <path
      style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
      d="M 66.182522,1.2295344 75.42809,19.207028 H 56.863575 Z"
      id="path4" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     d="m -22.431053,67.468749 9.245568,17.977494 H -31.75 Z"
+     id="path4-9" />
 </svg>

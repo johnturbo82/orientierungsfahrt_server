@@ -44,16 +44,23 @@
          id="path135" />
     </marker>
   </defs>
-  <g
-     id="layer1"
-     transform="translate(-62.201958,-104.10054)">
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:2.4;stroke-dasharray:none;marker-start:url(#Triangle);marker-end:url(#Dot)"
-       d="m 109.71195,115.84656 0.77725,112.93748"
-       id="path1" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:2.4;stroke-dasharray:none"
-       d="M 62.197611,160.81604 191.69819,160.35525"
-       id="path2" />
-  </g>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     id="rect1"
+     width="4.0561132"
+     height="113.41514"
+     x="64.117775"
+     y="17.004473" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     id="rect1-5-9"
+     width="4.0561132"
+     height="131.51164"
+     x="61.89315"
+     y="-131.90166"
+     transform="rotate(90)" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     d="M 66.182522,1.2295344 75.42809,19.207028 H 56.863575 Z"
+     id="path4" />
 </svg>

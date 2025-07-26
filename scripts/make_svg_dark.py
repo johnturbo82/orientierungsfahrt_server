@@ -16,5 +16,9 @@ def replace_fill_black_with_white(svg_path):
 
 if __name__ == "__main__":
     for filename in os.listdir(SVG_DIR):
-        if filename.lower().endswith('.svg'):
+        if (
+            filename.lower().endswith('.svg')
+            and not filename.lower().startswith('saveas')
+            and not filename.lower().startswith('template')
+        ):
             replace_fill_black_with_white(os.path.join(SVG_DIR, filename))

@@ -26,8 +26,12 @@ async def get_version() -> int:
 @app.get("/tours")
 async def get_tours() -> list[Turn]:
     list_turns = []
-    list_turns.append(Turn(id=1, name="Start", description="Start der Tour", image="cross_street", image_source=images["cross_street"]))
+    list_turns.append(Turn(id=1, name="Start", description="Start der Tour", image="cross_street"))
     list_turns.append(Turn(id=2, name="Links abbiegen", description="Nach der Brücke", image="left"))
     list_turns.append(Turn(id=3, name="Rechts abbiegen", image="right"))
     list_turns.append(Turn(id=4, name="Ziel", description="Ende der Tour", image="end"))
     return list_turns
+
+@app.get("/images")
+async def get_images(name: str) -> tuple[str, str]:
+    return images.get(name, ""), images.get(f"{name}_dark", "")

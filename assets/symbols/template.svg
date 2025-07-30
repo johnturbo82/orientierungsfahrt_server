@@ -7,8 +7,30 @@
    viewBox="0 0 132.29167 132.29166"
    version="1.1"
    id="svg1"
+   sodipodi:docname="vorlage.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.696"
+     inkscape:cx="202.83019"
+     inkscape:cy="297.46462"
+     inkscape:window-width="2320"
+     inkscape:window-height="1252"
+     inkscape:window-x="2151"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <marker
@@ -78,6 +100,12 @@
      id="path3"
      cx="-19.344536"
      cy="41.809158"
+     r="7.4882078" />
+  <circle
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+     id="path3-3"
+     cx="66.145836"
+     cy="124.58255"
      r="7.4882078" />
   <path
      style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"

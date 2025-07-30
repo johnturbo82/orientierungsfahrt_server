@@ -7,30 +7,8 @@
    viewBox="0 0 132.29167 132.29166"
    version="1.1"
    id="svg1"
-   sodipodi:docname="cross_street.svg"
-   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#505050"
-     bordercolor="#eeeeee"
-     borderopacity="1"
-     inkscape:showpageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#505050"
-     inkscape:zoom="1.696"
-     inkscape:cx="250"
-     inkscape:cy="250"
-     inkscape:window-width="3440"
-     inkscape:window-height="1331"
-     inkscape:window-x="1470"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <marker
@@ -71,24 +49,24 @@
      id="rect1"
      width="4.0561132"
      height="113.41514"
-     x="64.204514"
-     y="16.601137" />
+     x="64.157181"
+     y="16.71921" />
   <rect
      style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
      id="rect1-5-9"
      width="4.0561132"
      height="131.51164"
-     x="61.489815"
-     y="-131.98839"
+     x="61.607887"
+     y="-131.94107"
      transform="rotate(90)" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
      id="path3-3"
-     cx="66.232574"
-     cy="124.17921"
+     cx="66.185249"
+     cy="124.29728"
      r="7.4882078" />
   <path
      style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
-     d="M 66.269256,0.82619806 75.514824,18.803692 H 56.950309 Z"
+     d="M 66.221929,0.94427324 75.467497,18.921767 H 56.902982 Z"
      id="path4" />
 </svg>

@@ -11,15 +11,13 @@ def encode_images_to_base64(directory):
     for filename in os.listdir(directory):
         path = os.path.join(directory, filename)
         key = os.path.splitext(filename)[0]
+        if filename.lower().startswith('saveas') or filename.lower().startswith('template'):
+            continue
         if filename.lower().endswith('.svg'):
             with open(path, "r", encoding="utf-8") as svg_file:
                 svg_content = svg_file.read()
                 minimized = scour.scourString(svg_content)
                 b64_string = base64.b64encode(minimized.encode('utf-8')).decode('utf-8')
-                images[key] = b64_string
-        else:
-            with open(path, "rb") as img_file:
-                b64_string = base64.b64encode(img_file.read()).decode('utf-8')
                 images[key] = b64_string
     return images
 

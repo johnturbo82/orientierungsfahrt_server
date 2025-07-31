@@ -32,6 +32,6 @@ async def get_tours() -> list[Turn]:
     list_turns.append(Turn(id=4, name="Ziel", description="Ende der Tour", image="end"))
     return list_turns
 
-@app.get("/images")
+@app.get("/images/{name}", response_model=tuple[str, str])
 async def get_images(name: str) -> tuple[str, str]:
     return images.get(name, ""), images.get(f"{name}_dark", "")

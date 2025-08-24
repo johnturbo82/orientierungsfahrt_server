@@ -19,18 +19,13 @@ app.add_middleware(
 async def get_index() -> HTMLResponse:
     return HTMLResponse(content="<h1>Welcome to the Orientierungsfahrt Server</h1><p>Use the API to get information about the tours. See <a href='/docs'>Docs</a> for further information.</p>")
 
-@app.get("/version")
+@app.get("/version", response_model=int)
 async def get_version() -> int:
     return 1
 
-@app.get("/tours")
+@app.get("/tours", response_model=list[Turn])
 async def get_tours() -> list[Turn]:
-    list_turns = []
-    list_turns.append(Turn(id=1, name="Start", description="Start der Tour", image="cross_street"))
-    list_turns.append(Turn(id=2, name="Links abbiegen", description="Nach der Brücke", image="left"))
-    list_turns.append(Turn(id=3, name="Rechts abbiegen", image="right"))
-    list_turns.append(Turn(id=4, name="Ziel", description="Ende der Tour", image="end"))
-    return list_turns
+    return get_tours()
 
 @app.get("/images/{name}", response_model=tuple[str, str])
 async def get_image(name: str) -> tuple[str, str]:

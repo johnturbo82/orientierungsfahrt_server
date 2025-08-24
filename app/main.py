@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
-from models import Turn
-from images import images
+from .database import get_image_by_title
+from .models import Turn
 
 app = FastAPI(title="Orientierungsfahrt Server", version="1.0")
 
@@ -33,5 +33,5 @@ async def get_tours() -> list[Turn]:
     return list_turns
 
 @app.get("/images/{name}", response_model=tuple[str, str])
-async def get_images(name: str) -> tuple[str, str]:
-    return images.get(name, ""), images.get(f"{name}_dark", "")
+async def get_image(name: str) -> tuple[str, str]:
+    return get_image_by_title(name), get_image_by_title(f"{name}_dark")
